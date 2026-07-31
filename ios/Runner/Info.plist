@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>BridgeCare</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>BridgeCare</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+
+	<!-- Health (HealthKit) -->
+	<key>NSHealthShareUsageDescription</key>
+	<string>BridgeCare reads your heart rate, blood pressure and activity from Apple Health to keep your family informed if anything looks unusual.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>BridgeCare can record heart rate readings to Apple Health when you choose to log them.</string>
+
+	<!-- Microphone (chat voice notes) -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>BridgeCare needs microphone access to send voice notes to your family.</string>
+
+	<!-- Location (live tracking + safe zones) -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>BridgeCare uses your location so your family can see where you are if you need help.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>BridgeCare uses your location in the background to keep your family updated and to alert them if you leave your safe zone.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>BridgeCare uses your location in the background to alert your family if you leave your safe zone.</string>
+
+	<!-- Camera (profile / check-in photos) -->
+	<key>NSCameraUsageDescription</key>
+	<string>BridgeCare can use the camera to take a profile picture or share a quick photo with family.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>BridgeCare needs photo library access so you can pick a profile picture or share photos with family.</string>
+
+	<!-- Background modes -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+		<string>location</string>
+	</array>
+
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>flutter</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>carebridge.oauth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>carebridge</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
